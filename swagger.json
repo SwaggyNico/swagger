@@ -9,7 +9,7 @@
     },
     "x-logo" : {
       "url" : "http://simple-front-end-sg.s3-website-ap-southeast-1.amazonaws.com/img/SIMPLE_LOGO.png",
-      "backgroundColor" : "FAFAFA"
+      "backgroundColor" : "#FAFAFA"
     }
   },
   "tags" : [ {
