@@ -1,11 +1,15 @@
 {
   "openapi" : "3.0.0",
   "info" : {
-    "description" : "# Authorization\n\nTo be able to perform calls on the Simple Food Rest API, you need to use a token which has been given to you by the Simple Food organization.d\n\n### Bearer token\n\nThe token must be sent in the Authorization header when making requests. TEST\n\nAuthorization: Bearer [token] (ex: \"Bearer hmlZERcret65454dsc\")\n",
+    "description" : "# Authorization\n\nTo be able to perform calls on the Simple Food Rest API, you need to use a token which has been given to you by the Simple Food organization.d\n\n### Bearer token\n\nThe token must be sent in the Authorization header when making requests.\n\nAuthorization: Bearer [token] (ex: \"Bearer hmlZERcret65454dsc\")\n",
     "version" : "1.0.0-oas3",
     "title" : "Simple Food API",
     "contact" : {
       "email" : "it@simplefoodapp.com.au"
+    },
+    "x-logo" : {
+      "url" : "http://simple-front-end-sg.s3-website-ap-southeast-1.amazonaws.com/img/SIMPLE_LOGO.png",
+      "backgroundColor" : null
     }
   },
   "tags" : [ {
