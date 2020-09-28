@@ -115,6 +115,118 @@
           }
         }
       }
+    },
+    "/residents/{externalId}/picture" : {
+      "get" : {
+        "tags" : [ "Residents" ],
+        "summary" : "Get the resident picture",
+        "operationId" : "getResidentPicture",
+        "description" : "Get a specific resident picture through his externalId\n\nhttps://api.simpleplatform.com.au/v1/residents/{externalId}/picture\n",
+        "parameters" : [ {
+          "in" : "header",
+          "name" : "Authorization",
+          "description" : "Bearer [token]",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "in" : "path",
+          "required" : true,
+          "name" : "externalId",
+          "description" : "externalId of a resident",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "The requested resident",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "externalId" : {
+                      "type" : "integer"
+                    },
+                    "firstName" : {
+                      "type" : "string"
+                    },
+                    "lastName" : {
+                      "type" : "string"
+                    },
+                    "picture" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Residents" ],
+        "summary" : "Add or update the resident picture",
+        "operationId" : "postResidentPicture",
+        "description" : "Add or update the resident picture\n\nhttps://api.simpleplatform.com.au/v1/residents/{externalId}/picture\n",
+        "requestBody" : {
+          "content" : {
+            "multipart/form-data" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "picture" : {
+                    "type" : "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters" : [ {
+          "in" : "header",
+          "name" : "Authorization",
+          "description" : "Bearer [token]",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "in" : "path",
+          "required" : true,
+          "name" : "externalId",
+          "description" : "externalId of a resident",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "The resident and his updated picture link",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "externalId" : {
+                      "type" : "integer"
+                    },
+                    "firstName" : {
+                      "type" : "string"
+                    },
+                    "lastName" : {
+                      "type" : "string"
+                    },
+                    "picture" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "servers" : [ {
