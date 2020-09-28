@@ -163,6 +163,10 @@
             "example" : "Male",
             "enum" : [ "Male", "Female", "Transgender", "Other", "Not Disclosed" ]
           },
+          "picture" : {
+            "type" : "string",
+            "example" : "https://storage.googleapis.com/image.jpg"
+          },
           "birthdate" : {
             "type" : "string",
             "format" : "YYYY-MM-DD",
@@ -176,6 +180,10 @@
             "type" : "string",
             "example" : "Home",
             "enum" : [ "Active", "External", "Home", "Respite", "Deceased", "On leave" ]
+          },
+          "hasGivenConsent" : {
+            "type" : "boolean",
+            "example" : true
           },
           "roomNumber" : {
             "type" : "string",
@@ -224,7 +232,7 @@
             "type" : "boolean",
             "example" : true
           },
-          "foodAllergiesNotes" : {
+          "allergiesNotes" : {
             "type" : "string",
             "example" : "Prawns - anaphylaxis. Other shellfish ?"
           },
@@ -235,6 +243,10 @@
           "dislikeNotes" : {
             "type" : "string",
             "example" : "Rice, pasta, Brocolli, Beans."
+          },
+          "extraFoodRequirement" : {
+            "type" : "string",
+            "example" : "sustagen 150ml daily"
           }
         }
       },
