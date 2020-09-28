@@ -186,6 +186,7 @@
         },
         "parameters" : [ {
           "in" : "header",
+          "required" : true,
           "name" : "Authorization",
           "description" : "Bearer [token]",
           "schema" : {
