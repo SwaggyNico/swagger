@@ -146,13 +146,13 @@
             "type" : "string",
             "example" : "John"
           },
-          "preferredName" : {
-            "type" : "string",
-            "example" : "Joe"
-          },
           "middleName" : {
             "type" : "string",
             "example" : "Dave"
+          },
+          "preferredName" : {
+            "type" : "string",
+            "example" : "Joe"
           },
           "lastName" : {
             "type" : "string",
@@ -193,28 +193,32 @@
             "type" : "string",
             "example" : 23
           },
+          "diningRoomName" : {
+            "type" : "string",
+            "example" : "Acacia"
+          },
           "fluidThickness" : {
             "type" : "string",
             "example" : "Thin",
             "enum" : [ "Thin", "Slightly thick", "Mildly thick", "Moderately thick", "Extremely thick" ]
-          },
-          "dietAlert" : {
-            "type" : "string",
-            "example" : "Diet alert"
           },
           "texturePreference" : {
             "type" : "string",
             "example" : "Easy to chew",
             "enum" : [ "Liquidised", "Pureed", "Minced & moist", "Soft & bite-sized", "Easy to chew", "Regular" ]
           },
-          "diningRoomName" : {
+          "dietAlert" : {
             "type" : "string",
-            "example" : "Acacia"
+            "example" : "Diet alert"
           },
           "mealSize" : {
             "type" : "string",
             "example" : "Medium",
             "enum" : [ "Small", "Medium", "Large" ]
+          },
+          "extraFoodRequirement" : {
+            "type" : "string",
+            "example" : "sustagen 150ml daily"
           },
           "cutUp" : {
             "type" : "boolean",
@@ -232,10 +236,6 @@
             "type" : "boolean",
             "example" : true
           },
-          "allergiesNotes" : {
-            "type" : "string",
-            "example" : "Prawns - anaphylaxis. Other shellfish ?"
-          },
           "likeNotes" : {
             "type" : "string",
             "example" : "Roasts, seafood"
@@ -244,9 +244,9 @@
             "type" : "string",
             "example" : "Rice, pasta, Brocolli, Beans."
           },
-          "extraFoodRequirement" : {
+          "allergiesNotes" : {
             "type" : "string",
-            "example" : "sustagen 150ml daily"
+            "example" : "Prawns - anaphylaxis. Other shellfish ?"
           }
         }
       },
