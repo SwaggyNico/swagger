@@ -119,7 +119,7 @@
     "/residents/{externalId}/picture" : {
       "get" : {
         "tags" : [ "Residents" ],
-        "summary" : "Get the resident picture",
+        "summary" : "Get a resident picture",
         "operationId" : "getResidentPicture",
         "description" : "Get a specific resident picture through his externalId\n\nhttps://api.simpleplatform.com.au/v1/residents/{externalId}/picture\n",
         "parameters" : [ {
@@ -167,7 +167,7 @@
       },
       "post" : {
         "tags" : [ "Residents" ],
-        "summary" : "Add or update the resident picture",
+        "summary" : "Add or update a resident picture",
         "operationId" : "postResidentPicture",
         "description" : "Add or update the resident picture\n\nhttps://api.simpleplatform.com.au/v1/residents/{externalId}/picture\n",
         "requestBody" : {
