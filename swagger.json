@@ -8,7 +8,7 @@
       "email" : "it@simplefoodapp.com.au"
     },
     "x-logo" : {
-      "url" : "https://app.simpleplatform.com.au/assets/img/logo.png",
+      "url" : "http://simple-front-end-sg.s3-website-ap-southeast-1.amazonaws.com/img/SIMPLE_LOGO.png",
       "backgroundColor" : "#FAFAFA"
     }
   },
